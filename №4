@@ -1,0 +1,19 @@
+Console.WriteLine("Введи число: ");
+int num = int.Parse(Console.ReadLine()!);
+
+int num1 = 1;
+
+bool not = true;
+
+Console.WriteLine($"Чётные числа от 1 до {num}");
+while(num1 <= num){
+    if(num1 % 2 != 1){
+        Console.Write(num1 + ", ");
+        not = false;
+    }       
+    num1++;
+    }
+
+ if(not){
+    Console.WriteLine("Нет чётных чисел!");
+ }
